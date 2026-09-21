@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>Healthy Foods Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <main class="main-content">
+      <div class="main-identity">
+        <div class="brand">
+          <div class="brand-mark">hf</div>
+          <div><strong>Healthy Foods</strong><span>your daily food guide</span></div>
+        </div>
+        <div class="sidebar-section profile-summary" id="profileSummary">
+          <p class="eyebrow">YOUR PROFILE</p>
+          <div class="profile-empty">
+            <span class="avatar">+</span>
+            <span>ยังไม่มีข้อมูลโปรไฟล์</span>
+          </div>
+        </div>
+      </div>
+      <header class="topbar">
+        <div><p class="eyebrow">PERSONAL FOOD GUIDE</p><h1>คุยกับผู้ช่วย<br><em>สุขภาพของคุณ</em></h1></div>
+        <div class="status"><span class="status-dot"></span> พร้อมให้คำแนะนำ</div>
+      </header>
+
+      <section class="chat-layout">
+        <div class="chat-panel">
+          <div class="chat-header"><div class="bot-avatar">✦</div><div><strong>Healthy Foods Bot</strong><span>ผู้ช่วยแนะนำอาหารเพื่อสุขภาพ</span></div><button class="icon-button" id="resetButton" title="เริ่มต้นใหม่">↻</button></div>
+          <div class="chat-messages" id="chatMessages"></div>
+          <div class="chat-composer" id="composer"></div>
+        </div>
+
+        <!-- ซ่อนไว้ตามคำขอ: แผงคำแนะนำด้านขวา -->
+        <!-- <aside class="insight-panel">
+          <div class="insight-heading"><span class="leaf-icon">◒</span><div><p class="eyebrow">SMART MATCH</p><h2>คำแนะนำ<br>ที่เหมาะกับคุณ</h2></div></div>
+          <p class="insight-copy">ตอบคำถามสั้น ๆ แล้วเราจะช่วยจัดมื้ออาหารที่เข้ากับเป้าหมายและไลฟ์สไตล์ของคุณ</p>
+          <div class="mini-stat"><span>01</span><div><b>Personalized</b><small>ปรับตามเป้าหมายคุณ</small></div></div>
+          <div class="mini-stat"><span>02</span><div><b>Balanced</b><small>ดูแคลอรี่และสารอาหาร</small></div></div>
+          <div class="mini-stat"><span>03</span><div><b>Practical</b><small>ทำตามได้ในชีวิตจริง</small></div></div>
+          <div class="quote">“ อาหารที่ดี คืออาหารที่ทำให้คุณรู้สึกดีทั้งวันนี้และวันพรุ่งนี้ ”</div>
+        </aside> -->
+      </section>
+    </main>
+  </div>
+  <div class="modal-backdrop hidden" id="foodModal"><div class="food-modal" id="modalContent"></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
